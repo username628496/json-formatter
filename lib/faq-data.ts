@@ -7,12 +7,12 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'What Is a JSON Formatter?',
     answer:
-      'A JSON formatter takes raw, compressed JSON text and restructures it with consistent indentation and line breaks — making each key-value pair readable on its own line and each nested level visually distinct. Developers use it when debugging API responses from services such as GitHub REST API, Stripe, and Firebase.',
+      'A JSON formatter takes raw, compressed JSON text and restructures it with consistent indentation and line breaks - making each key-value pair readable on its own line and each nested level visually distinct. Developers use it when debugging API responses from services such as GitHub REST API, Stripe, and Firebase.',
   },
   {
     question: 'What Is the Difference Between Format and Minify?',
     answer:
-      'Format adds indentation and line breaks so humans can read the structure clearly. Minify removes all whitespace to reduce file size by 15-40% — the standard for JSON served in production APIs where every byte affects load time.',
+      'Format adds indentation and line breaks so humans can read the structure clearly. Minify removes all whitespace to reduce file size by 15-40% - the standard for JSON served in production APIs where every byte affects load time.',
   },
   {
     question: 'Which Indent Size Should You Use for JSON?',

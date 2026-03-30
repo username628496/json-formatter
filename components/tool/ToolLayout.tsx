@@ -74,7 +74,7 @@ export function ToolLayout() {
     }
   }, [])
 
-  // Auto-format — debounced so rapid typing doesn't parse on every keystroke
+  // Auto-format - debounced so rapid typing doesn't parse on every keystroke
   useEffect(() => {
     if (formatTimer.current) clearTimeout(formatTimer.current)
     formatTimer.current = setTimeout(() => runFormat(input, indent), 300)
@@ -312,7 +312,7 @@ export function ToolLayout() {
         onIndentChange={setIndent}
       />
 
-      {/* Editor grid — normal or fullscreen */}
+      {/* Editor grid - normal or fullscreen */}
       {fullscreen ? (
         <div className="fixed inset-0 z-50 bg-background p-4 flex flex-col gap-3 overflow-auto">
           <div className="flex items-center justify-between">

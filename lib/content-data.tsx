@@ -18,7 +18,7 @@ export const CONTENT_SECTIONS: ContentSection[] = [
             JSON formatter
           </Link>{' '}
           is a browser-based tool that restructures raw,
-          compressed JSON text into an indented, readable document —
+          compressed JSON text into an indented, readable document -
           detecting syntax errors at the exact line and column where they
           occur. Developers use a JSON formatter when debugging API responses
           from services such as GitHub REST API, Stripe payment API, and
@@ -39,8 +39,8 @@ export const CONTENT_SECTIONS: ContentSection[] = [
           string, number, object, array, boolean, null, and nested objects.
           A single API response from a production endpoint can contain 200+
           nested key-value pairs compressed into one unreadable line. The
-          JSON formatter applies consistent indentation — 2 spaces, 4 spaces,
-          or tab — to every nested level, restoring readability in under one
+          JSON formatter applies consistent indentation - 2 spaces, 4 spaces,
+          or tab - to every nested level, restoring readability in under one
           second.
         </p>
       </>
@@ -63,7 +63,7 @@ export const CONTENT_SECTIONS: ContentSection[] = [
           The parser validates JSON structure before formatting. If the input
           contains a missing comma between key-value pairs, an unclosed
           bracket, an unquoted key, or a trailing comma after the last
-          element — the formatter halts and reports the exact error location.
+          element - the formatter halts and reports the exact error location.
           Formatting applies only to valid JSON, so the output is always
           syntactically correct.
         </p>
@@ -131,7 +131,7 @@ export const CONTENT_SECTIONS: ContentSection[] = [
           Do not minify JSON that developers read directly. Configuration
           files, local development data, and documentation examples benefit
           from full indentation. Minified JSON committed to version control
-          produces unreadable diffs — obscuring what changed between commits
+          produces unreadable diffs - obscuring what changed between commits
           and slowing code review.
         </p>
       </>
@@ -149,7 +149,7 @@ export const CONTENT_SECTIONS: ContentSection[] = [
         analysis. YAML conversion targets Docker Compose, Kubernetes
         manifests, and CI/CD pipeline configuration files. TypeScript
         interface generation produces type-safe interface definitions from any
-        JSON structure — eliminating manual type writing in TypeScript and
+        JSON structure - eliminating manual type writing in TypeScript and
         Angular projects.
       </p>
     ),
@@ -160,10 +160,10 @@ export const CONTENT_SECTIONS: ContentSection[] = [
     content: (
       <p className="text-sm text-muted-foreground leading-relaxed">
         A JSON formatter validates syntax against RFC 8259 but does not
-        validate JSON Schema — it cannot check whether a value matches an
+        validate JSON Schema - it cannot check whether a value matches an
         expected type, range, or pattern defined in a schema file. It does not
         evaluate JavaScript expressions inside JSON strings. It does not parse
-        JSON5, JSONC (JSON with comments), or HJSON formats — though the
+        JSON5, JSONC (JSON with comments), or HJSON formats - though the
         Repair JSON function removes comments before formatting. For JSON
         Schema validation, use a dedicated schema validator such as{' '}
         <a

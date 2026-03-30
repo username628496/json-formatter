@@ -144,7 +144,7 @@ export function IconToolbar({
       const file = (e.target as HTMLInputElement).files?.[0]
       if (!file) return
       if (file.size > MAX_SIZE) {
-        setUrlError('File too large — maximum is 10 MB')
+        setUrlError('File too large - maximum is 10 MB')
         return
       }
       const reader = new FileReader()
@@ -165,10 +165,10 @@ export function IconToolbar({
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const contentLength = res.headers.get('content-length')
       if (contentLength && parseInt(contentLength) > MAX_SIZE) {
-        throw new Error('Response too large — maximum is 10 MB')
+        throw new Error('Response too large - maximum is 10 MB')
       }
       const text = await res.text()
-      if (text.length > MAX_SIZE) throw new Error('Response too large — maximum is 10 MB')
+      if (text.length > MAX_SIZE) throw new Error('Response too large - maximum is 10 MB')
       JSON.parse(text)
       onUpload(text)
       setShowUrlModal(false)

@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: 'About - JSON Formatter Online',
-  description: 'Learn about JSON Formatter Online — a free, privacy-first developer tool that runs entirely in your browser.',
+  description: 'Learn about JSON Formatter Online - a free, privacy-first developer tool that runs entirely in your browser.',
   alternates: { canonical: 'https://jsonformatter.codes/about' },
   openGraph: {
     title: 'About - JSON Formatter Online',
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <h2 className="font-medium text-base mb-2">How it works</h2>
             <p className="text-muted-foreground">
               Everything runs locally in your browser using JavaScript. When you paste or
-              upload JSON, it never leaves your device — there is no backend, no upload
+              upload JSON, it never leaves your device - there is no backend, no upload
               endpoint, and no network request involved in processing your data. The tool
               works offline once the page has loaded.
             </p>

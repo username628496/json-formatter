@@ -41,8 +41,8 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <img src="/json-formatter-logo.png" alt="JSON Formatter Online" width="28" height="28" className="rounded-lg" />
-          <span className="font-medium text-sm">JSON Formatter Online</span>
+          <img src="/json-formatter-logo.png" alt="JSON Formatter logo" width="28" height="28" className="rounded-lg" />
+          <span className="font-medium text-sm">JSON Formatter</span>
         </Link>
 
         {/* Right side */}

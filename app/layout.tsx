@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const geist = Geist({ subsets: ['latin'] })
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
   description:
     'JSON Formatter, Beautifier and JSON Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML. Save and share JSON. All processing runs in your browser.',
   metadataBase: new URL('https://jsonformatter.codes'),
+  verification: {
+    google: 'xZska4OK3PAc3_SCC7mtfmq8hct16u5qVBZnmYFPhoo',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -24,13 +28,13 @@ export const metadata: Metadata = {
     description:
       'JSON Formatter, Beautifier and JSON Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML. Save and share JSON. All processing runs in your browser.',
     url: 'https://jsonformatter.codes',
-    siteName: 'JSON Formatter Online',
+    siteName: 'JSON Formatter',
     images: [
       {
         url: 'https://jsonformatter.codes/json-formatter-logo.png',
         width: 512,
         height: 512,
-        alt: 'JSON Formatter Online',
+        alt: 'JSON Formatter',
       },
     ],
     type: 'website',
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'JSON Formatter Online',
+  name: 'JSON Formatter',
   url: 'https://jsonformatter.codes',
   logo: {
     '@type': 'ImageObject',
@@ -57,13 +61,12 @@ const organizationSchema = {
   },
   description:
     'JSON Formatter, Beautifier and Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML.',
-  sameAs: [] as string[],
 }
 
 const webAppSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'JSON Formatter Online',
+  name: 'JSON Formatter',
   url: 'https://jsonformatter.codes',
   description:
     'JSON Formatter, Beautifier and Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML. All processing runs in your browser.',
@@ -75,6 +78,8 @@ const webAppSchema = {
     price: '0',
     priceCurrency: 'USD',
   },
+  inLanguage: 'en',
+  isAccessibleForFree: true,
   featureList: [
     'JSON Formatter and Beautifier',
     'JSON Validator and Linter',
@@ -109,6 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
         />
+        <GoogleAnalytics gaId="G-PQTCE6XN0S" />
       </body>
     </html>
   )

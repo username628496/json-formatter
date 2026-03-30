@@ -15,14 +15,23 @@ export const metadata: Metadata = {
     description:
       'JSON Formatter, Beautifier and JSON Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML. Save and share JSON. All processing runs in your browser.',
     url: 'https://jsonformatter.codes',
-    siteName: 'JSON Formatter Online',
+    siteName: 'JSON Formatter',
+    images: [
+      {
+        url: 'https://jsonformatter.codes/json-formatter-logo.png',
+        width: 512,
+        height: 512,
+        alt: 'JSON Formatter',
+      },
+    ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'JSON Formatter and JSON Validator - Format, Beautify and Lint JSON',
     description:
-      'JSON Formatter, Beautifier and JSON Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML.',
+      'JSON Formatter, Beautifier and JSON Validator. Format JSON data, validate syntax, convert JSON to XML, CSV and YAML. Save and share JSON.',
+    images: ['https://jsonformatter.codes/json-formatter-logo.png'],
   },
 }
 
@@ -35,7 +44,7 @@ const faqSchema = {
       name: 'What is a JSON formatter?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A JSON formatter takes raw, compressed JSON text and restructures it with consistent indentation and line breaks — making each key-value pair readable on its own line and each nested level visually distinct.',
+        text: 'A JSON formatter takes raw, compressed JSON text and restructures it with consistent indentation and line breaks - making each key-value pair readable on its own line and each nested level visually distinct.',
       },
     },
     {
@@ -43,7 +52,7 @@ const faqSchema = {
       name: 'What is the difference between format and minify?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Format adds indentation and line breaks for human readability. Minify removes all whitespace to reduce file size by 15-40% — the standard for JSON served in production APIs where every byte affects load time.',
+        text: 'Format adds indentation and line breaks for human readability. Minify removes all whitespace to reduce file size by 15-40% - the standard for JSON served in production APIs where every byte affects load time.',
       },
     },
     {
@@ -84,15 +93,15 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
       <main className="max-w-5xl mx-auto px-4 py-6">
         <ToolLayout />
       </main>
       <Footer />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
     </>
   )
 }

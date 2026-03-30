@@ -23,7 +23,7 @@ export default function ContactPage() {
 
         <h1 className="text-2xl font-semibold tracking-tight mb-2">Contact</h1>
         <p className="text-sm text-muted-foreground mb-10">
-          Bug report, feature request, or just want to say hi — fill in the form below
+          Bug report, feature request, or just want to say hi - fill in the form below
           and I&apos;ll get back to you.
         </p>
 
